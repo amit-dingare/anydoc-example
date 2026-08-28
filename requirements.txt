@@ -1,0 +1,5 @@
+# Core dependency for document conversion
+firecrawl-anydoc>=0.1.0
+
+# Optional: For loading environment variables
+python-dotenv>=1.0.0
