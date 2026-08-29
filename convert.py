@@ -19,6 +19,14 @@ except ImportError:
     print("Please run: pip install -r requirements.txt")
     sys.exit(1)
 
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # python-dotenv is optional, continue without it
+    pass
+
 
 def find_input_file(filename: str) -> Path:
     """
